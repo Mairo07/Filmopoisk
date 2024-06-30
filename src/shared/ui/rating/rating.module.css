@@ -1,0 +1,25 @@
+.rating{
+  display: flex;
+}
+
+.element {
+  color: var(--no-active-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.elementIcon{
+  inline-size: 14.33px;
+  block-size: 14.23px;
+}
+
+.elementIconHover {
+  fill: var(--accent-color);
+}

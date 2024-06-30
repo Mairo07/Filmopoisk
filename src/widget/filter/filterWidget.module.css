@@ -1,0 +1,7 @@
+.filterWidget {
+  block-size: 232px;
+  inline-size: 408px;
+  border-radius: var(--components-border-radius);
+  padding: 24px;
+  background-color: #fff;
+}

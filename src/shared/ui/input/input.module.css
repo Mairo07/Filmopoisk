@@ -1,0 +1,24 @@
+.input_wraper {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 4px;
+  inline-size: 100%;
+}
+
+.input_label::after {
+	content: '*';
+	margin-inline-start: 4px;
+	color: var(--error-color);
+}
+
+.input {
+  inline-size: 100%;
+	border: 1px solid #ced2d6;
+	border-radius: var(--components-border-radius);
+	block-size: var(--components-block-size);
+}
+
+.input:active {
+	border-color: var(--accent-color);
+}

@@ -1,0 +1,31 @@
+.header {
+  inline-size: 100%;
+  block-size: 88px;
+  background-color: #333;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.headerLogo {
+  text-decoration: none;
+  color: #fff;
+}
+
+.headerLogoText {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.17;
+}
+
+.authBlock {
+  display: flex;
+  gap: 16px;
+}
+
+.avatar {
+  inline-size: 40px;
+  block-size: 40px;
+}

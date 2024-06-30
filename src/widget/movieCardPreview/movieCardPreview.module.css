@@ -1,0 +1,63 @@
+@import '/src/variables.css';
+
+.movieCardPreview {
+	display: flex;
+	gap: 24px;
+	border-radius: var(--components-border-radius);
+	padding: 24px;
+	background-color: #fff;
+	inline-size: 100%;
+	block-size: 208px;
+}
+
+.movieCardPreview:not(:last-child) {
+	margin-block-end: 16px;
+}
+
+.movieCardPreviewDescription {
+	block-size: 100%;
+	inline-size: 100%;
+}
+
+.movieCardPreviewTitle {
+	margin-block-end: 16px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.movieCardPreviewPoster {
+	border-radius: var(--components-border-radius);
+	inline-size: 100px;
+	block-size: 120px;
+}
+
+.row {
+	display: flex;
+	gap: 16px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.row:not(:last-child) {
+	margin-block-end: 12px;
+}
+
+.rowLabel {
+	display: inline-block;
+	color: var(--no-active-text-color);
+	inline-size: 90px;
+}
+
+.rowText {
+	display: inline-block;
+	color: var(--text-main-color);
+}
+
+.rowTextDescription {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	block-size: 60px;
+	inline-size: 600px;
+}

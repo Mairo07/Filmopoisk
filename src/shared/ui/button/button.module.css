@@ -1,0 +1,30 @@
+.button {
+	border: none;
+	border-radius: var(--components-border-radius);
+	padding: 8px 16px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.43;
+	cursor: pointer;
+	block-size: var(--components-block-size);
+}
+
+.buttonPrimary {
+	color: #fff;
+	background-color: var(--accent-color);
+}
+
+.buttonPrimary:hover {
+	background-color: var(--accent-color-hover);
+}
+
+.buttonOutline {
+	border: 1px solid currentColor;
+	color: var(--accent-color);
+	background-color: transparent;
+}
+
+.buttonOutline:hover {
+	border-color: var(--accent-color-hover);
+	color: var(--accent-color-hover);
+}

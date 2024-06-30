@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  gap: 24px;
+}
+.movieCardsList {
+  margin: 16px 0;
+}
+
+.content {
+  padding: 20px 32px;
+}

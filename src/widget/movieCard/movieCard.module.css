@@ -1,0 +1,65 @@
+@import '/src/variables.css';
+
+.movieCard {
+	display: flex;
+	gap: 24px;
+	border-radius: var(--components-border-radius);
+	padding: 24px;
+	background-color: #fff;
+	inline-size: 100%;
+	block-size: 553px;
+	margin-block-end: 24px;
+	position: relative;
+}
+
+.movieCardDescription {
+	color: var(--text-main-color);
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.movieCardTitle {
+	margin-block-end: 36px;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1;
+}
+
+.movieCardPoster {
+	border-radius: var(--components-border-radius);
+	inline-size: 400px;
+	block-size: 500px;
+	object-fit: cover;
+}
+
+.row {
+	margin-block-end: 16px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.43;
+}
+
+.rowLabel {
+	font-weight: 600;
+}
+
+.descriptionLabel {
+	margin-block-end: 16px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.6;
+	font-weight: 600;
+}
+
+
+.descriptionText {
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+.ratingWraper {
+	position: absolute;
+	inset-block-start: 25px;
+	inset-inline-end: 25px;
+}

@@ -1,0 +1,33 @@
+@import '../assets/fonts/fonts.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "SF Pro", sans-serif;;
+  inline-size: 100%;
+  margin: 0 auto;
+  background-color: #ededed;
+}

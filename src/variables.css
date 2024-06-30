@@ -1,0 +1,10 @@
+:root {
+  --accent-color: #f50;
+  --accent-color-hover: #e94e00;
+  --error-color: #f04075;
+  --input-border-color: #e1e3e6;
+  --text-main-color: #1b1f23;
+  --no-active-text-color: #ababab;
+  --components-border-radius: 8px;
+  --components-block-size: 40px;
+}

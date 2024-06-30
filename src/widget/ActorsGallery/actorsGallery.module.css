@@ -1,0 +1,31 @@
+.actorsTitle {
+  font-size: 24px;
+  font-weight: 600px;
+  line-height: 1.43; /* convert 32px */
+  margin-block-end: 24px;
+}
+
+.actorsList {
+	display: flex;
+	gap: 24px;
+  overflow-x: scroll;
+  inline-size: 100%;
+}
+
+.actorCard {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.actorPhoto {
+	border-radius: var(--components-border-radius);
+	object-fit: cover;
+	block-size: 228.57px;
+	inline-size: 160px;
+}
+
+.actorTitle {
+	font-size: 14px;
+	line-height: 1.43; /* convert 20px */
+}

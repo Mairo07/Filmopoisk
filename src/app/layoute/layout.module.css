@@ -1,0 +1,8 @@
+.layout {
+  min-width: 1090px;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 20px 32px;
+}

@@ -1,0 +1,39 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    inline-size: 344px;
+    block-size: 300px;
+    background: #fff;
+    padding: 24px;
+    border-radius: var(--components-border-radius);
+    position: relative;
+  }
+  
+  .modalClose {
+    inline-size: 10px;
+    block-size: 10px;
+    position: absolute;
+    top: 29px;
+    right: 27px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .modalCloseIcon {
+    inline-size: 10px;
+    block-size: 10px;
+    color: var(--no-active-text-color);
+  }
+  
