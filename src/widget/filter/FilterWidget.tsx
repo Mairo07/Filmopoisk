@@ -28,20 +28,27 @@ export const FilterWidget: React.FC<FilterWidgetProps> = ({
 
 	return (
 		<div className={classes.filterWidget}>
-			<label> Жанр </label>
-			<Dropdown
-				placeholder='Выберите жанр'
-				onChange={handleGenreChange}
-				options={GENRES}
-				selected={genre}
-			/>
-			<label> Год </label>
-			<Dropdown
-				placeholder='Выберите год'
-				onChange={handleYearChange}
-				options={YEARS}
-				selected={year}
-			/>
+			<h3 className={classes.title}>Фильтр</h3>
+			<div className={classes.dropdown}>
+				<label className={classes.filterLabel}> Жанр </label>
+				<Dropdown
+					placeholder='Выберите жанр'
+					onChange={handleGenreChange}
+					options={GENRES}
+					selected={genre}
+				/>
+			</div>
+			<div className={classes.dropdown}>
+				<label className={`${classes.filterLabel} ${classes.labelMargin}`}>
+					Год
+				</label>
+				<Dropdown
+					placeholder='Выберите год'
+					onChange={handleYearChange}
+					options={YEARS}
+					selected={year}
+				/>
+			</div>
 		</div>
 	);
 };

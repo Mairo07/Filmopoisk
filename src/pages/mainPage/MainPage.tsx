@@ -3,7 +3,7 @@ import { MovieCardPreview } from '../../widget/movieCardPreview/MovieCardPreview
 import { useGetMoviesListQuery } from '../../shared/api/moviesApi';
 import classes from './mainPage.module.css';
 import { Filters } from '../../feature/filter/Filter';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { SearchWidget } from '../../widget/SearchWidget/SearchWidget';
 import { useAppDispatch, useAppSelector } from '../../shared/hook/redux';
 import {
@@ -16,9 +16,14 @@ export const MainPage = (): ReactElement => {
 	const { data, error, isLoading } = useGetMoviesListQuery(location.search);
 	const dispatch = useAppDispatch();
 	const filter = useAppSelector((state) => state.filter);
+	const navigate = useNavigate();
 
 	const handleChange = (options: PartialFilterState) => {
 		dispatch(changeFilter(options));
+	};
+
+	const handleClick = (id: string) => {
+		navigate(`/movie/${id}`);
 	};
 	console.log({ data, error, isLoading });
 
@@ -33,11 +38,13 @@ export const MainPage = (): ReactElement => {
 							return (
 								<MovieCardPreview
 									key={value.id}
+									id={value.id}
 									title={value.title}
 									poster={value.poster}
 									genre={value.genre}
 									release_year={value.release_year}
 									description={value.description}
+									onClick={handleClick}
 								/>
 							);
 						})

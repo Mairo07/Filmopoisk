@@ -4,21 +4,23 @@ import { Rating } from '../../shared/ui/rating/Rating';
 import { useAppSelector } from '../../shared/hook/redux';
 
 interface IMovieCardPreview {
-	key: string;
+	id: string;
 	title: string;
 	description: string;
 	poster: string;
 	release_year: number;
 	genre: string;
+	onClick: (id: string) => void;
 }
 
 export const MovieCardPreview: React.FC<IMovieCardPreview> = ({
-	key,
+	id,
 	title,
 	description,
 	poster,
 	release_year,
 	genre,
+	onClick,
 }): ReactElement => {
 	const token = useAppSelector((state) => state.auth.token);
 	const [selectedRating, setSelectedRating] = useState(0);
@@ -26,7 +28,12 @@ export const MovieCardPreview: React.FC<IMovieCardPreview> = ({
 		setSelectedRating(num);
 	};
 	return (
-		<li key={key} className={classes.movieCardPreview}>
+		<li
+			className={classes.movieCardPreview}
+			onClick={() => {
+				onClick(id);
+			}}
+		>
 			<img
 				src={poster}
 				alt={`Постер фильма ${title}`}
